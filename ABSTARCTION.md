@@ -6,7 +6,6 @@
 ### AIM 
 ---
 Create the abstract method calculate_area which is of the abstract class 'Shape'. The implementation of this abstract class can be defined in the sub-classes that inherit the class 'Shape'. 'Rectangle' and 'Circle' are the two sub-classes that inherit the abstract class 'Shape'.
----
 
 ### ALGORITHM
 
