@@ -24,16 +24,32 @@ To write a Python program to create a class `Student` with the private members `
 ---
 
 ### PROGRAM
+~~~
+Reg.No: 212223090004
+Name: D Dharshini priya
 
-```
-
-
-
-```
+class Student:
+    def __init__(self, name, age):
+        self.name = name
+        self.__age = age
+    def get_age(self):
+        return self.__age
+    def set_age(self, age):
+        self.__age=age
+    def get_name(self):
+        return self.__name
+stud = Student('Jessa', 14)
+print('Name:', stud.name, stud.get_age())
+stud.set_age(16)
+print('Name:', stud.name, stud.get_age())
+~~~
 
 ### OUTPUT
+<img width="487" height="179" alt="image" src="https://github.com/user-attachments/assets/4622e3b9-f60f-4d7a-9a5d-56d7d6908a0e" />
+
 
 
 ### RESULT
+Thus the program is created and verified.
 
 
