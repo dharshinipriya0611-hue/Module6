@@ -3,42 +3,57 @@
 
 ---
 
-### AIM  
-To write a Python program to define the abstract base class named `Polygon` and also define the abstract method. This base class is inherited by various subclasses. Implement the abstract method in each subclass. Create objects of the subclasses and invoke the `sides()` method.
-
+### AIM 
+---
+Create the abstract method calculate_area which is of the abstract class 'Shape'. The implementation of this abstract class can be defined in the sub-classes that inherit the class 'Shape'. 'Rectangle' and 'Circle' are the two sub-classes that inherit the abstract class 'Shape'.
 ---
 
 ### ALGORITHM
 
-1. **Start the Program.**
-2. **Import the ABC class** from the `abc` module to implement abstraction.
-3. **Define the abstract base class Polygon**:
-   - Inherit from `ABC` (Abstract Base Class).
-   - Define an abstract method `sides()` with no implementation.
-4. **Define the Triangle class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"Triangle has 3 sides"`.
-5. **Define the Pentagon class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"Pentagon has 5 sides"`.
-6. **Define the Hexagon class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"Hexagon has 6 sides"`.
-7. **Define the Square class** that inherits from `Polygon`:
-   - Implement the `sides()` method to print `"I have 4 sides"`.
-8. **Create an object `t` of the Triangle class** and call the `sides()` method to print the number of sides.
-9. **Create an object `s` of the Square class** and call the `sides()` method to print the number of sides.
-10. **Create an object `p` of the Pentagon class** and call the `sides()` method to print the number of sides.
-11. **Create an object `k` of the Hexagon class** and call the `sides()` method to print the number of sides.
-12. **End the Program.**
+1. Start the program.
+2. Import ABC and abstractmethod from the abc module.
+3. Define an abstract base class Shape with an abstract method calculated_area().
+4. Define the Rectangle class inheriting from Shape and implement the calculated_area() method.
+5. Define the Circle class inheriting from Shape and implement the calculated_area() method.
+6. Display the area of each shape.
+7. End the program.
 
 ---
 
 ### PROGRAM
+~~~
+Reg.No: 212223090004
+Name: D Dharshini priya
 
-```
+from abc import ABC, abstractmethod
+class Shape(ABC):
+    @abstractmethod
+    def calculate_area(self):
+        pass
+class Rectangle(Shape):
+    length = 5
+    breadth =3 
+    def calculate_area(self):
+        return self.length * self.breadth
 
+class Circle(Shape):
+    radius = 4
+    def calculate_area(self):
+        return 3.14*4*4
+        
+r=Rectangle()
+r.calculate_area()
+c=Circle()
+c.calculate_area()
+print("Area of a rectangle:", r.calculate_area())
+print("Area of a circle:", c.calculate_area())
+~~~
 
-```
 
 ### OUTPUT
+<img width="862" height="253" alt="image" src="https://github.com/user-attachments/assets/63ba6574-9070-4feb-9fed-6f226f3906f3" />
+
 
 
 ### RESULT
+Thus the program is created and verified.
